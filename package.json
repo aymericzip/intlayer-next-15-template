@@ -14,9 +14,9 @@
   },
   "dependencies": {
     "concurrently": "^9.1.2",
-    "intlayer": "canary",
+    "intlayer": "latest",
     "next": "15.3.1",
-    "next-intlayer": "canary",
+    "next-intlayer": "latest",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -26,7 +26,7 @@
     "@types/react-dom": "^18.3.5",
     "eslint": "^8.57.1",
     "eslint-config-next": "14.2.17",
-    "intlayer-editor": "canary",
+    "intlayer-editor": "latest",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2"
