@@ -10,6 +10,9 @@ const config: IntlayerConfig = {
 
     enabled: true,
   },
+  log: {
+    mode: "verbose",
+  },
 };
 
 export default config;
