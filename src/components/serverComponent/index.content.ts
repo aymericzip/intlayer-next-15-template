@@ -5,8 +5,8 @@ const serverComponentContent: Dictionary = {
   content: {
     test: t({
       en: "Hover over me to edit",
-      fr: "Survolez-moi pour modifier",
-      es: "Pasa el cursor sobre mí para editar",
+      es: "Pasa el ratón por encima para editar",
+      fr: "Survolez moi pour éditer",
     }),
   },
 };
