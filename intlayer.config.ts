@@ -13,6 +13,9 @@ const config: IntlayerConfig = {
     dictionaryPriorityStrategy: "distant_first",
     enabled: true,
   },
+  build: {
+    importMode: "dynamic",
+  },
   log: {
     mode: "verbose",
   },
