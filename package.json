@@ -1,5 +1,5 @@
 {
-  "name": "test-intlayer-next",
+  "name": "intlayer-next-15",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,10 +15,10 @@
   },
   "dependencies": {
     "concurrently": "^9.1.2",
-    "intlayer": "6.1.4",
+    "intlayer": "7.0.1",
     "next": "^15.4.3",
     "fuse.js": "^7.1.0",
-    "next-intlayer": "6.1.4",
+    "next-intlayer": "7.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -28,8 +28,8 @@
     "@types/react-dom": "^18.3.5",
     "eslint": "^8.57.1",
     "eslint-config-next": "14.2.17",
-    "@intlayer/swc": "6.1.4",
-    "intlayer-editor": "6.1.4",
+    "@intlayer/swc": "7.0.1",
+    "intlayer-editor": "7.0.1",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2"

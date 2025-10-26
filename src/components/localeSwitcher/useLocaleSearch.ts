@@ -1,16 +1,20 @@
 import Fuse, { type IFuseOptions } from "fuse.js";
-import { getLocaleName, Locales, type LocalesValues } from "intlayer";
+import {
+	getLocaleName,
+	Locales,
+	type LocalesValues,
+} from "intlayer";
 import { useState } from "react";
 
 type MultilingualAvailableLocales = {
-  locale: LocalesValues;
-  englishName: string;
-  currentLocaleName: string;
-  ownLocaleName: string;
+	locale: LocalesValues;
+	englishName: string;
+	currentLocaleName: string;
+	ownLocaleName: string;
 };
 
 export const useLocaleSearch = (
-  availableLocales: LocalesValues[] = Object.values(Locales),
+  availableLocales: LocalesValues[],
   locale: LocalesValues = Locales.ENGLISH
 ) => {
   const multilingualAvailableLocales: MultilingualAvailableLocales[] =

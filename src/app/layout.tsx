@@ -1,5 +1,5 @@
 import "./globals.css";
-import { FC, PropsWithChildren } from "react";
+import type { FC, PropsWithChildren } from "react";
 
 export { generateStaticParams } from "next-intlayer";
 
