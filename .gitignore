@@ -42,4 +42,9 @@ next-env.d.ts
 
 # intlayer
 .intlayer
-types/intlayer.d.ts
+
+# package lock - remove for git to always use the latest package to automate testing
+# if you are using this repo as a starter template, you can remove these lines
+package-lock.json
+pnpm-lock.yaml
+bun.lock
