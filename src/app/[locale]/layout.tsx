@@ -3,6 +3,7 @@ import {
   getIntlayer,
   getTranslation,
   type StrictModeLocaleMap,
+  type LocalesValues,
 } from "intlayer";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -18,10 +19,11 @@ export const generateMetadata = async ({
   params,
 }: LocalPromiseParams): Promise<Metadata> => {
   const { locale } = await params;
+  const validLocale = locale as LocalesValues;
 
-  const metadata = getIntlayer("page-metadata", locale);
+  const metadata = getIntlayer("page-metadata", validLocale);
   const t = <T,>(content: StrictModeLocaleMap<T>) =>
-    getTranslation(content, locale);
+    getTranslation(content, validLocale);
 
   return {
     ...metadata,
@@ -35,8 +37,9 @@ export const generateMetadata = async ({
 
 const LocaleLayout: Next15LayoutIntlayer = async ({ children, params }) => {
   const { locale } = await params;
+  const validLocale = locale as LocalesValues;
   return (
-    <html lang={locale} dir={getHTMLTextDir(locale)}>
+    <html lang={validLocale} dir={getHTMLTextDir(validLocale)}>
       <body className={inter.className}>{children}</body>
     </html>
   );

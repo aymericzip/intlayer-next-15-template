@@ -13,10 +13,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "intlayer": "9.0.0-canary.12",
+    "intlayer": "canary",
     "next": "^15.5.20",
     "fuse.js": "7.1.0",
-    "next-intlayer": "9.0.0-canary.12",
+    "next-intlayer": "canary",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -26,7 +26,7 @@
     "@types/react-dom": "^19.2.3",
     "eslint": "^10.6.0",
     "eslint-config-next": "16.2.0",
-    "intlayer-editor": "9.0.0-canary.12",
+    "intlayer-editor": "canary",
     "postcss": "^8.5.16",
     "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3"
